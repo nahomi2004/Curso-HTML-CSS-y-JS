@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Primera pagina web</title>
+</head>
+<body>
+	<p>Esta informacion fue recogida y resumida de la siguiente lista de reproduccion de Youtube https://www.youtube.com/watch?v=QwMlgfMK6fQ&list=PLJubkp8BnTJtjPikTnv8JoYWKFjUu7bRH&pp=iAQB es del creador de contenido @CodingTube</p>
+
+	<h1 id="home">Primera pagina web</h1>
+	<p>Asi como en word, existen varios titulos, cada uno con su primeridad. Entre mayor sea el numero, menos prioridar tiene. </p>
+	<p>Hay 6 tipos de "títulos" van desde h1 hasta h6, su tamaño es proporcional con su importancia</p>
+	<h1>Titulo 1</h1>
+	<h2>Titulo 2</h2>
+	<h3>Titulo 3</h3>
+	<h4>Titulo 4</h4>
+	<h5>Titulo 5</h5>
+	<h6>Titulo 5</h6>
+
+	<hr>
+	<h2>Menu</h2>
+	<p>Este va a ser el menu esta conformado por enlaces, en caso de querer que el menu sea vertical y no horizontal como es que tengo yo, puedes agregar la etiqueta <b> <i> br </i> </b> para poner "enters". Te muestro:</p>
+
+	<h3>Menu Horizontal</h3>
+	<nav>
+		<a href="#intro">Introducción</a>
+		<a href="#imag">Imagenes</a>
+		<a href="#listas">Listas</a>
+	</nav>
+
+	<h3>Menu Vertical</h3>
+	<nav>
+		<a href="#intro">Introducción</a> <br>
+		<a href="#imag">Imagenes</a> <br>
+		<a href="#listas">Listas</a> <br>
+	</nav>
+
+	<p>
+		Algo que debes tener en cuenta es que si vas a dirigirte a alguno de los titulos con enlaces, debes ponerles id, esto se hace dentro de la etiqueta de apertura y se hace con esta sintaxis: <br>
+		<code>id="intro"</code>
+	</p>
+	<hr>
+
+	<h2 id="intro">Introducción: Etiquetas</h2>
+
+	<h3>Comentarios</h3>
+
+	<p>Siempre se debe empezar por lo mas basico y facil, en este caso comentar, para comentar solo vas a tener que usar la siguiente estructura:</p>
+
+	<!--Este es un comentario y no lo puedes ver-->
+
+<pre><code>
+&lt;!--Inserte Comentario--&gt;
+</code></pre>
+
+	<p>Como ya has de saber los comentarios no son visibles en la pagina web cuando la ejecutas, son pasado de largo por el ejecutador y solo sirven para que personas ajenas al codigo entiendan de que trata cada seccion.</p>
+
+	<h3>Etiqueta hr</h3>
+	<hr>
+	<p>La etiqueta <b> hr </b> crea esa línea como en word. Es solo una etiqueta de apertura, no tiene cierre</p>
+
+<pre><code>
+&lt;hr&gt;
+</code></pre>
+
+	<hr>
+
+	<h3>Etiquetas p y br</h3>
+	<p>Con la etiqueta <i>p</i> creas párrafos, esta es la tipica etiqueta con apertura y cierre <br> En cambio <i>br</i> que es la encargada de crear espacios o ENTER es solo una etiqueta de apertura. Te lo muestro:</p>
+
+<pre><code>
+&lt;br&gt;
+
+&lt;p&gt;Este es un parrafo&lt;/p&gt;
+</code></pre>
+
+	<h3>Etiquetas b, i, u</h3>
+	<p>Otras etiquetas importantes son aquellas que ayudan a da formato de texto: <b>negrita</b>, <i>cursiva</i> y <u>subrayado</u></p>
+
+	<h4>Negrita</h4>
+	<p>Etiquetas <b> b </b> y <strong> strong </strong> </p>
+
+	<h4>Cursiva</h4>
+	<p>Etiquetas <i> i </i> y <em> em </em> </p>
+
+	<h4>Subrayado</h4>
+	<p>Etiqueta <u> u </u> </p>
+
+
+	<p>
+		Debes tener en cuenta que hay diferencias y saber cuando debes usar cada una de las etiquetas: <br>
+		<i> i </i> y <b> b </b> son etiquetas visuales, en cambio <em> em </em> y <strong> strong </strong> son eqtiquetas que resaltan a la pagina web, esto quiere decir que le dan la suficiente importancia para que los internautas encuentren la página.
+	</p>
+
+<pre><code>
+&lt;b&gt;Negrita&lt;/b&gt;
+
+&lt;i&gt;Cursiva&lt;/i&gt;
+
+&lt;strong&gt;Negrita con tag&lt;/strong&gt;
+
+&lt;em&gt;Cursiva con tag&lt;/em&gt;
+
+&lt;u&gt;Subrayado&lt;/u&gt;
+</code></pre>
+
+	<h3>Etiquetas de organizacion</h3>
+	<p>
+		Hay etiquetas que nos ayudan a organizar de mejor forma nuestra página: <i><b>	header</b></i>, <i><b> nav</b></i>, <i><b> aside</b></i>, <i><b> section</b>	</i>, <i><b> article</b></i>, <i><b> footer</b></i>.
+		<br>
+		<br> HEADER es el encabezado de nuestra página.
+		<br> NAV son los enlances de navegación
+		<br> ASIDE es la informacion adicional a la que se muestra
+		<br> SECTION son los temas principales a tratar
+		<br> ARTICLE es la informacion sobre esos temas
+		<br> FOOTER lleva la informacion pie de página, cosas como contactos, copyright, etc
+	</p>
+
+<pre><code>
+&lt;header&gt;HEADER&lt;/header&gt;
+
+&lt;nav&gt;NAV&lt;/nav&gt;
+
+&lt;aside&gt;ASIDE&lt;/aside&gt;
+
+&lt;section&gt;SECTION&lt;/section&gt;
+
+&lt;article&gt;ARTICLE&lt;/article&gt;
+
+&lt;footer&gt;FOOTER&lt;/footer&gt;
+</code></pre>
+
+
+	<h3>Etiquetas para enlaces</h3>
+	<p>
+		Se utiliza la etiqueta <b>a</b> y en el valor vamos a poner href="#". El # nos sirve para no especificar un id o enlace en general, si lo dejas no te llevará a ninguna parte.
+		<br> Se deben crear ID para que el enlace apunte a un lugar de la página mismo, que es algo de lo que se hablaba al principio.
+		<br> Para que apunte se debe poner en la eqtiqueta id="idEnlance" y después de eso 	se pone en el menú "#idEnlance" así ese enlace estará apuntando a un lugar de la 	propia página. Se va a entender mejor si te muestro el codigo:
+	</p>
+
+<pre><code>
+&lt;h3&gt;Menu Horizontal&lt;/h3&gt;
+
+&lt;nav&gt;
+	&lt;a href="#intro"&gt;Introducción&lt;/a&gt;
+&lt;/nav&gt;
+
+&lt;h2 id="intro"&gt;Introducción: Etiquetas&lt;/h2&gt;
+</code></pre>
+
+	<h4>¿Qué pasa si quiero enviarlo a facebook o un enlace fuera de  la pagina?</h4>
+	<p>
+		Cuando se desea hacer eso de enviarlo a una página externa, se hace lo siguiente, se pone pues el texto en medio de la etiqueta y en la parte de de id pongo la dirección de la página con su protocolo. <br>EJEMPLO:
+		<a target="_blank" href="https://www.youtube.com/@IngCheems">Youtube Ing. Cheems</a>
+		Si quieres que se abra la página en una pestaña diferente pones la palabra target="_blank", dentro de la etiqueta
+	</p>
+
+<pre><code>
+&lt;a href="https://www.youtube.com/@IngCheems"&gt;Youtube Ing. Cheems&lt;/a&gt;
+
+&lt;a target="_blank" href="https://www.youtube.com/@IngCheems"&gt;Youtube Ing. Cheems&lt;/a&gt;
+</code></pre>
+
+	<h4>¿Qué pasa si quiero enviarlo a una sub-página de mi misma página?</h4>
+
+	<p>
+		Ahora si quieres dirigir al usuario a una página de tu mismo sitio web, solo debes 	crear un doc nuevo html dentro de la misma carpeta, OJO LA MISMAAA CARPETAAAA. Después de eso usamos la etiqueta a y ponemos entre "" el nombre de nuestro documento. En caso de ponerlo en una carpeta dentro de la otra carpeta poner 	carpeta/doc.html <br>EJEMPLO:
+	</p>
+	<a target="_blank" href="pagina2.html">Otra pagina de aquí</a>
+
+<pre><code>
+&lt;a target="_blank" href="pagina2.html"&gt;Otra pagina de aqui&lt;/a&gt;
+</code></pre>
+
+	<h4>¿Qué pasa si quiero que descargue un doc?</h4>
+
+	<p>
+		Otro uso que se le puede dar es sobre descargar archivos, pues se usa igual la 	etiqueta a y en el valor de href pones el nombre del archivo y ya uwu. EJEMPLO:
+		<br>
+	</p>
+	<a href="etiquetas HTML5.png">DESCARGAAAA CLICK AQUIIII</a>
+
+<pre><code>
+&lt;a href="etiquetas HTML5.png"&gt;DESCARGAAAA CLICK AQUIIII&lt;/a&gt;
+</code></pre>
+
+	<h2 id="imag">Imagenes</h2>
+
+	<p>Hay que tener en cuenta de que hay imagenes externas e internas, se habla de imagenes externas cuando son provenientes de otra pagina web y el enlace directo es puesto en nuestra pagina, lo malo con este tipo de imagenes es que en el momento en el que esa pagina web quite o cambie la imagen el enlace sera diferente y por ende se muestre un error en nuestra pagina. Si usas este tipo de imagenes, siempre debes poner su descripcion. Te muestro</p>
+
+	<p>Imagen donde se direcciona a una url correcta o existente</p>
+	<img src="https://media.es.wired.com/photos/6501e7429fa9000811a95fe8/16:9/w_1280,c_limit/Adobe%20Firefly.jpeg" alt="Chico en la cima de una montaña observando el paisaje donde resalta una montaña blanca enorme." />
+
+	<p>Imagen donde se direcciona a una url incorrecta o inexistente</p>
+	<img src="https://media.es.wired.com/jijijijaphotos/6501e7429fa9000811a95fe8/16:9/w_1280,c_limit/Adobe%20Firefly.jpeg" alt="Chico en la cima de una montaña observando el paisaje donde resalta una montaña blanca enorme." />
+
+	<p>Imagen donde se direcciona a una url incorrecta o inexistente, y sin una descripcion</p>
+	<img src="https://media.es.wired.com/jijijijaphotos/6501e7429fa9000811a95fe8/16:9/w_1280,c_limit/Adobe%20Firefly.jpeg" />
+
+<pre><code>
+&lt;img src="https://media.es.wired.com/photos/6501e7429fa9000811a95fe8/16:9/w_1280,c_limit/Adobe%20Firefly.jpeg" 
+	alt="Chico en la cima de una montaña observando el paisaje donde resalta una montaña blanca enorme."/&gt;
+</code></pre>
+
+	<!--A la imagen la saque de https://c4.wallpaperflare.com/wallpaper/50/914/446/spirit-blossom-ahri-league-of-legends-ahri-league-of-legends-riot-games-hd-wallpaper-preview.jpg y la otra imagen es un fondo de pantalla que hice-->
+
+	<p>
+		Pero, dejando las imagenes externas, yo tambien mencione que existian imagenes internas, estas se encuentran dentro de la carpeta de nuestro proyecto, ya sea dentro de otra carpeta o no, en mi caso si estan dentro de otra carpeta que se llamara imagenes. Antes de mostrarte el codigo quiero que quede claro varias cosas, como por ejemplo, que puedes usar las imagenes como links, o un area de la imagen como link, ya te enseñare como, pero debes saber que necesitaras del siguiente link: https://www.image-map.net
+	</p>
+
+	<p>Agregar imagen interna</p>
+	<img src="imagenes/lol.jpg" alt="Campeona del videojuego League of legends" />
+
+	<p>Otra cosa a tener en cuenta es como modificas a la imagen, en caso de que quieras ajustar el tamaño de la imagen te recomiendo que lo hagas utilizando o solo el ancho o el largo, jamas los dos, porque puedes llegar a deformar la imagen.</p>
+
+	<p>Modificando el ancho (se calculaa automaticamente el alto)</p>
+	<img src="imagenes/lol.jpg" alt="Campeona del videojuego League of legends" width="300" />
+
+	<p>Modificando el alto (se calculaa automaticamente el ancho)</p>
+	<img src="imagenes/lol.jpg" alt="Campeona del videojuego League of legends" height="300" />
+
+	<p>Modificando ambos (se deforma la imagen)</p>
+	<img src="imagenes/lol.jpg" alt="Campeona del videojuego League of legends" width="300" height="300" />
+
+<pre><code>
+&lt;src="imagenes/lol.jpg" alt="Campeona del videojuego League of legends" /&gt;
+
+&lt;img src="imagenes/lol.jpg" alt="Campeona del videojuego League of legends" width="300" /&gt;
+
+&lt;src="imagenes/lol.jpg" alt="Campeona del videojuego League of legends" height="300" /&gt;
+
+&lt;img src="imagenes/lol.jpg" alt="Campeona del videojuego League of legends" width="300" height="300" /&gt;
+</code></pre>
+
+	<p>
+		Antes de ir a la imagenes que se comportan como links, quisiera aclarar que puedes ponerle titulo a una imagen y este se mostrara cada vez que pases el mouse sobre ella. Se logra con la palabra title.
+	</p>
+
+	<img src="imagenes/lol.jpg" alt="Campeona del videojuego League of legends" title="Campeona de LOL" height="300" />
+
+<pre><code>
+&lt;img src="imagenes/lol.jpg" alt="Campeona del videojuego League of legends" title="Campeona de LOL" height="300"/&gt;
+</code></pre>
+
+	<p>Cabe aclarar que todo lo anterior funciona para .gif o .png</p>
+
+	<img src="imagenes/Lol.gif" alt="Campeona del videojuego League of legends" title="Campeona de LOL" height="300" />
+
+	<img src="imagenes/Fondo 2.png" alt="Fondo de panatlla hecho por Nahomi" title="Fondo" height="300" />
+
+	<p>
+		Ahora si, vamos con las imagenes como link. <br>
+		Para hacer que una imagen se comporte como un link se necesita la etiqueta a, y dentro de ella se especifica la imagen.
+	</p>
+
+	<a href="https://www.wallpaperflare.com/search?wallpaper=league+of+legends">
+		<img src="imagenes/lol.jpg" alt="Campeona del videojuego League of legends" width="300" />
+	</a>
+
+	<p>
+		Otra forma de usar imagenes como enlaces, es determinando areas con diferentes enlaces, por ejemplo, yo tengo esta imagen de la campeona de Lol, bueno, por a hacer que cada vez que pases tu mouse por la mano de ella te dirija a otro enlace, si pasam el mouse por su rostro te llevara a otro enlace, y si pasas el mouse por el sapito en el lado inferior derecho te llevara a otro enlace. <br>
+		Como antes mencione antes vamos a necesitar de la siguiente herramienta: https://www.image-map.net. Y vamos a seguir los siguientes pasos:
+	</p>
+
+	<ol>
+		<li>Seleccionar la imagen en la que queremos trabajar.</li>
+		<li>Para crear las diferentes formas dirigete a Shape y escge, Circle (Circulo), Rect (Rectangulo) o Poly (Poligono).</li>
+		<li>Para crear circulo debes hacer un ciclk en el centro del area y luego hacer clcik fuera del centro, al limite, estas dibujando el radio del circulo, igual puedes ajustarlo como tu quieras utilizando el punto fuera, o moverlo utilizando el punto centrico.</li>
+		<li>Para crear rectangulos debes hacer dos clicks en diagonal, igual puedes ajustan su tamaño utilizando los puntos creados, y moverlo sosteniendo el click en el centro del rectangulo.</li>
+		<li>Para crear poligonos solo deberes crear puntos como tu quieras, igual puedes ajustarlo y moverlo.</li>
+		<li>Ahora vamos a la parte de link, ahi vas a pegar los links a los que quieras que el area seleccionada apunte.</li>
+		<li>Tambien puedes nombrar a cada una de las areas.</li>
+		<li>Por utlimo, si ya acabaste de configurar a tu gusto, solo debes hacer click en "Show Me The Code" y pegas el codigo</li>
+		<li>Algo que debes tener en cuenta es que para que se te muestre la imagen igual debes usar el formato anterior y agregar <b><i>usemap=#nombreMapa</i></b>, es super necesario el #.</li>
+	</ol>
+
+	<img src="imagenes/lol.jpg" width="700" alt="Campeona del videojuego League of legends" usemap="#arhi" />
+
+	<map name="arhi">
+		<area target="_blank" alt="Quien es" title="Quien es" href="https://www.leagueoflegends.com/es-es/champions/ahri/" coords="305,184,35" shape="circle">
+		<area target="_parent" alt="Armados de Arhi" title="Armados de Arhi" href="https://www.leagueofgraphs.com/es/champions/builds/ahri" coords="606,357,608,339,628,316,650,316,669,320,686,326,688,348,697,361,698,385,678,404,650,402,621,395,606,381,603,368" shape="poly">
+		<area target="_self" alt="Universo" title="Universo" href="https://universe.leagueoflegends.com/es_MX/champion/ahri/" coords="413,122,467,48" shape="rect">
+	</map>
+
+<pre><code>
+&lt;img src="imagenes/lol.jpg" width="700" alt="Campeona del videojuego League of legends" usemap="#arhi" /&gt;
+&lt;map name="arhi"&gt;
+	&lt;area target="_blank" alt="Quien es" title="Quien es" href="https://www.leagueoflegends.com/es-es/champions/ahri/" coords="305,184,35" shape="circle"&gt;
+	&lt;area target="_parent" alt="Armados de Arhi" title="Armados de Arhi" href="https://www.leagueofgraphs.com/es/champions/builds/ahri" coords="606,357,608,339,628,316,650,316,669,320,686,326,688,348,697,361,698,385,678,404,650,402,621,395,606,381,603,368" shape="poly"&gt;
+	&lt;area target="_self" alt="Universo" title="Universo" href="https://universe.leagueoflegends.com/es_MX/champion/ahri/" coords="413,122,467,48" shape="rect"&gt;
+&lt;/map&gt;
+</code></pre>
+
+	<h2 id="listas">Listas</h2>
+
+	<h3>Tipo de listas</h3>
+	<p>
+		Existen dos tipos de listas: las ordenadas y desordenadas. <br>
+		Las listas ordenadas, siguen un orden, son aquellas que tienen numeros o letras como viñetas. <br>
+		Las listas desordenadas no siguen ningun orden en especifico, tiene puntos, vistos o cualquier simbolo como viñetas.
+	</p>
+	<h4>Listas Ordenadas</h4>
+
+	<ol>
+		<li>Primer Item</li>
+		<li>Segundo Item</li>
+		<li>Tercer Item</li>
+	</ol>
+
+	<h4>Listas Desordenadas</h4>
+	<ul>
+		<li>Item</li>
+		<li>Item</li>
+		<li>Item</li>
+	</ul>
+
+	<p>
+		Usas la etiqueta <i><b>ol</b></i> para las listas ordenadas, y <i><b>ul</b></i> para las desordenadas.<br>
+		Para crear items se use la etiqueta <i><b>il</b></i> para ambas listas. Debes tener en cuenta de que se puede cambiar el formato de lista, el tipo de vinietas, color, etc.
+	</p>
+
+<pre><code>
+&lt;ol&gt;
+	&lt;il&gt;Primer Item&lt;/il&gt;
+	&lt;il&gt;Segundo Item&lt;/il&gt;
+	&lt;il&gt;Tercer Item&lt;/il&gt;
+	&lt;il&gt;Cuarto Item&lt;/il&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+	&lt;il&gt;Primer Item&lt;/il&gt;
+	&lt;il&gt;Segundo Item&lt;/il&gt;
+	&lt;il&gt;Tercer Item&lt;/il&gt;
+	&lt;il&gt;Cuarto Item&lt;/il&gt;
+&lt;/ul&gt;
+</code></pre>
+
+	<h4>Personalizacion y caracteristicas</h4>
+	<p>
+		Para cambiar el tipo de vinieta que usas se hace de la siguiente forma:
+		<br>
+		Dentro de la etiqueta de apertura escribes <i><b>type="circle"</b></i>
+		tambien puedes usar la palabra square (cuadrado) o none (ninguno), todo esto que acabo de mencionar es para las listas desordenadas.
+		Para las listas ordenadas se usan las siguientes letras reservadas: 1, A, a, I (numero romanos), i (numero romanos).
+		Si deseas anidar listas, lo puedes hacer.
+	</p>
+
+	<h5>Listas Desordenadas</h5>
+
+	<ul type="circle">
+		<li>Primer Item</li>
+		<li>Segundo Item</li>
+		<li> Tercer Item</li>
+	</ul>
+
+<pre><code>
+&lt;ul type="circle"&gt;
+	&lt;il&gt;Primer Item&lt;/il&gt;
+	&lt;il&gt;Segundo Item&lt;/il&gt;
+	&lt;il&gt;Tercer Item&lt;/il&gt;
+&lt;/ul&gt;
+</code></pre>
+
+	<h5>Listas Ordenadas</h5>
+
+	<ol type="A">
+		<li>Primer Item</li>
+		<li>Segundo Item</li>
+		<li> Tercer Item</li>
+	</ol>
+
+<pre><code>
+&lt;ol type="A"&gt;
+	&lt;il&gt;Primer Item&lt;/il&gt;
+	&lt;il&gt;Segundo Item&lt;/il&gt;
+	&lt;il&gt;Tercer Item&lt;/il&gt;
+&lt;/ol&gt;
+</code></pre>
+
+	<h5>Listas Anidadas</h5>
+
+	<ul>
+		<li>Primer Item</li>
+		<ul type="circle">
+			<li>Primer Item</li>
+			<li>Segundo Item</li>
+			<li> Tercer Item</li>
+		</ul>
+		<li>Segundo Item</li>
+		<li> Tercer Item</li>
+	</ul>
+
+<pre><code>
+&lt;ul&gt;
+	&lt;il&gt;Primer Item&lt;/il&gt;
+		&lt;ul type="circle"&gt;
+			&lt;il&gt;Primer Item&lt;/il&gt;
+			&lt;il&gt;Segundo Item&lt;/il&gt;
+			&lt;il&gt;Tercer Item&lt;/il&gt;
+		&lt;/ul&gt;
+	&lt;il&gt;Segundo Item&lt;/il&gt;
+	&lt;il&gt;Tercer Item&lt;/il&gt;
+&lt;/ul&gt;
+</code></pre>
+
+	<p>
+		Pero antes de que cantes victoria y pienses que eso es todo, te vengo a bajar de las nubes.
+		Existe un tercer tipo de lista, y es la lista de descripcion, aqui se utilizan tres etiquetas: <i><b>dl (lista de descripcion), dt (termino), dd (Descripcion del termino)</b></i>.
+	</p>
+
+	<dl>
+		<dt>HTML</dt>
+		<dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</dd>
+		<dt>CSS</dt>
+		<dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</dd>
+		<dt>JS</dt>
+		<dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</dd>
+	</dl>
+
+<pre><code>
+&lt;dl&gt;
+	&lt;dt&gt;HTML&lt;/dt&gt;
+	&lt;dd&gt;
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+	&lt;/dd&gt;
+	&lt;dt&gt;CSS&lt;/dt&gt;
+	&lt;dd&gt;
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+	&lt;/dd&gt;
+	&lt;dt&gt;JS&lt;/dt&gt;
+	&lt;dd&gt;
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+	&lt;/dd&gt;
+&lt;/dl&gt;
+</code></pre>
+
+	<h2 id="tablas">Tablas</h2>
+
+	<h3>Etiquetas principales</h3>
+
+	<p>Para la creacion de tablas se necesitan de las etiquetas:</p>
+	<ul>
+		<li><i><b>table</b></i>: para la creacion de la tabla</li>
+		<li><i><b>tr</b></i>: para la creacion de cada fila</li>
+		<li><i><b>td</b></i>: para la creacion de cada columna</li>
+		<li><i><b>th</b></i>: para la creacion de los encabezados</li>
+		<li><i><b>caption</b></i>: etiqueta qye define el titulo de la tabla</li>
+	</ul>
+
+<pre><code>
+&lt;table&gt;
+	&lt;caption&gt;Personajes&lt;/caption&gt;
+	&lt;tr&gt;
+		&lt;th&gt;Nombre&lt;/th&gt;
+		&lt;th&gt;Apellido&lt;/th&gt;
+		&lt;th&gt;Edad&lt;/th&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Marinette&lt;/td&gt;
+		&lt;td&gt;Dupain-Cheng&lt;/td&gt;
+		&lt;td&gt;15&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Adrian&lt;/td&gt;
+		&lt;td&gt;Agreste&lt;/td&gt;
+		&lt;td&gt;15&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Tomas&lt;/td&gt;
+		&lt;td&gt;Astruc&lt;/td&gt;
+		&lt;td&gt;49&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
+
+	<table>
+		<caption>Personajes</caption>
+		<tr>
+			<th>Nombre</th>
+			<th>Apellido</th>
+			<th>Edad</th>
+		</tr>
+		<tr>
+			<td>Marinette</td>
+			<td>Dupain-Cheng</td>
+			<td>15</td>
+		</tr>
+		<tr>
+			<td>Adrian</td>
+			<td>Agreste</td>
+			<td>15</td>
+		</tr>
+		<tr>
+			<td>Tomas</td>
+			<td>Astruc</td>
+			<td>49</td>
+		</tr>
+	</table>
+
+	<h3>Bordes</h3>
+
+	<p>Pero hay un problema, no hay bordes, bueno para configurar los bordes debemos utilizar la palabra reservada <i><b>border</b></i> dentro de la etiqueta de apertura, <b>table</b>:</p>
+
+<pre><code>
+&lt;table border="1"&gt;
+	&lt;caption&gt;Personajes&lt;/caption&gt;
+	&lt;tr&gt;
+		&lt;th&gt;Nombre&lt;/th&gt;
+		&lt;th&gt;Apellido&lt;/th&gt;
+		&lt;th&gt;Edad&lt;/th&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Marinette&lt;/td&gt;
+		&lt;td&gt;Dupain-Cheng&lt;/td&gt;
+		&lt;td&gt;15&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Adrian&lt;/td&gt;
+		&lt;td&gt;Agreste&lt;/td&gt;
+		&lt;td&gt;15&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Tomas&lt;/td&gt;
+		&lt;td&gt;Astruc&lt;/td&gt;
+		&lt;td&gt;49&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
+
+	<table border="1">
+		<caption>Personajes</caption>
+		<tr>
+			<th>Nombre</th>
+			<th>Apellido</th>
+			<th>Edad</th>
+		</tr>
+		<tr>
+			<td>Marinette</td>
+			<td>Dupain-Cheng</td>
+			<td>15</td>
+		</tr>
+		<tr>
+			<td>Adrian</td>
+			<td>Agreste</td>
+			<td>15</td>
+		</tr>
+		<tr>
+			<td>Tomas</td>
+			<td>Astruc</td>
+			<td>49</td>
+		</tr>
+	</table>
+
+	<h3>Celdas combinadas</h3>
+
+	<p>Ahora vamos con las celdas combinadas, para su creacion se necesita la palabra reservada <i><b>colspan</b></i> (para combinar horizontalmente) y <i><b>rowspan</b></i> (para combinar verticalemente) y entre comillas se pone el numero de filas o columnas que necesites combinar. Desbes tener en cuenta que, ambas sentancias solo funcionan dento de la etiqueta th.</p>
+
+	<p>Celdas combinadas horizontalmente</p>
+
+	<table border="1">
+		<tr>
+			<th colspan="3">PERSONAJES</th>
+		</tr>
+		<tr>
+			<th>Nombre</th>
+			<th>Apellido</th>
+			<th>Edad</th>
+		</tr>
+		<tr>
+			<td>Marinette</td>
+			<td>Dupain-Cheng</td>
+			<td>15</td>
+		</tr>
+		<tr>
+			<td>Adrian</td>
+			<td>Agreste</td>
+			<td>15</td>
+		</tr>
+		<tr>
+			<td>Tomas</td>
+			<td>Astruc</td>
+			<td>49</td>
+		</tr>
+	</table>
+
+	<br> <!--ESPACIO-->
+
+	<table border="1">
+		<tr>
+			<th colspan="2">NOMBRE COMPLETO</th>
+			<th colspan="1">EDAD</th>
+		</tr>
+		<tr>
+			<td>Marinette</td>
+			<td>Dupain-Cheng</td>
+			<td>15</td>
+		</tr>
+		<tr>
+			<td>Adrian</td>
+			<td>Agreste</td>
+			<td>15</td>
+		</tr>
+		<tr>
+			<td>Tomas</td>
+			<td>Astruc</td>
+			<td>49</td>
+		</tr>
+	</table>
+
+	<br> <!--ESPACIO-->
+
+	<p>Celdas combinadas verticalmente</p>
+
+	<table border="1">
+		<tr>
+			<th rowspan="2">Principales</th>
+			<td>Marinette</td>
+			<td>Dupain-Cheng</td>
+			<td>15</td>
+		</tr>
+		<tr>
+			<td>Adrian</td>
+			<td>Agreste</td>
+			<td>15</td>
+		</tr>
+		<tr>
+			<th rowspan="1">Creador</th>
+			<td>Tomas</td>
+			<td>Astruc</td>
+			<td>49</td>
+		</tr>
+	</table>
+
+	<p>Celdas combinadas</p>
+
+	<table border="1">
+		<tr>
+			<th></th> <!--Agregar una columna vacia-->
+			<th colspan="2">NOMBRE COMPLETO</th>
+			<th colspan="1">EDAD</th>
+		</tr>
+		<tr>
+			<th rowspan="2">Principales</th>
+			<td>Marinette</td>
+			<td>Dupain-Cheng</td>
+			<td>15</td>
+		</tr>
+		<tr>
+			<td>Adrian</td>
+			<td>Agreste</td>
+			<td>15</td>
+		</tr>
+		<tr>
+			<th rowspan="1">Creador</th>
+			<td>Tomas</td>
+			<td>Astruc</td>
+			<td>49</td>
+		</tr>
+	</table>
+
+<pre><code>
+&lt;table border="1"&gt;
+	&lt;tr&gt;
+		&lt;th&gt;&lt;/th&gt;
+		&lt;th colspan="2"&gt;NOMBRE COMPLETO&lt;/th&gt;
+		&lt;th colspan="1"&gt;EDAD&lt;/th&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;th rowspan="2"&gt;Principales&lt;/th&gt;
+		&lt;td&gt;Marinette&lt;/td&gt;
+		&lt;td&gt;Dupain-Cheng&lt;/td&gt;
+		&lt;td&gt;15&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Adrian&lt;/td&gt;
+		&lt;td&gt;Agreste&lt;/td&gt;
+		&lt;td&gt;15&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;th rowspan="1"&gt;Creador&lt;/th&gt;
+		&lt;td&gt;Tomas&lt;/td&gt;
+		&lt;td&gt;Astruc&lt;/td&gt;
+		&lt;td&gt;49&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
+
+	<h2 id="formu">Formularios</h2>
+
+	<p>
+		Para entender como hacer formularios, pero sobre todo como funcionan, debemos tener en cuenta que cuando un usuario llena un formulario, estos datos son enviados a un servidor, donde seran verificados y le devuelve a la pagina una respuesta en base a los datos enviados. Para entenderlo mejor, tengamos en cuenta una pagina de inicio, comun y corriente:
+	</p>
+
+	<img src="imagenes/login.jpg" height="750" />
+
+	<p>Para crear formularios vas a necesitar de la siguiente estructura:</p>
+
+<pre><code>
+&lt;form&gt;
+	&lt;input type="#" id="#" name"#" value="#"&gt;
+&lt;/form&gt;
+</code></pre>
+
+	<p>
+		Que quiere decir type? Bueno en esta seccion se describe el tipo de formulario que deseamos, hay varios tipos, pero en una pagina de inicio suelen haber: text, password, submit.
+		<br>
+		Los formularios tipo texto son aquellos que reciben como entrada algo escrito por el usuario.
+		Los tipo contraseña reciben una constraseña, obviamente.
+		Los tipo submit que serian aquellos botones para enviar algo.
+		<br>
+		Bueno, aclarado eso, hay que aclarar que aquello que se envia a los servidores el el <b><i>name</i></b> y el <b><i>value</i></b>. Name, se refiere al nombre del valor, y value al valor en si.
+		<br>
+		Imaginemos que Stefano quiere ingresar a una pagina web cualquiera, y para ingresar le piden "Usuario" y "Contraseña". Lo que se le va a enviar al servidor sera lo siguiente:
+		<br>
+	</p>
+<pre><code>
+	name="Usuario" value="Stefano"
+	name="Contraseña" value="12345"
+</code></pre>
+
+	<p>
+		Una vez entendido esto, vamos a codificar. Para hacer formularios hay varias etiquetas importantes e interesantes, estas son:
+	</p>
+
+	<ul>
+		<li><i><b>form:</b></i> que es para dar a entender que se va a empezar con un nuevo formulario.</li>
+		<li><i><b>label:</b></i> sirve para especificar lo que queremos que coneste el usuario.</li>
+		<li><i><b>input:</b></i> se detalla el tipo de valores que se van a recibir, su id, y nombre.</li>
+		<li><i><b>fieldset:</b></i> es una etiqueta que ayuda a separar el formulario en secciones.</li>
+		<li><i><b>legend:</b></i> da un titulo a las secciones creadas.</li>
+	</ul>
+
+	<form action="">
+		<fieldset>
+			<legend>Datos del usuario</legend>
+
+			<label for="Name">Nombre:</label>
+			<input type="text" id="Name" name="Name" />
+
+			<br>
+			<br>
+
+			<label for="pass">Constraseña:</label>
+			<input type="password" id="pass" name="pass" />
+
+			<br>
+			<br>
+
+			<label for="email">Nombre:</label>
+			<input type="email" id="email" name="email" />
+
+			<br>
+			<br>
+		</fieldset>
+	</form>
+
+	<p>
+		Como nos podemos dar cuenta hay varias palabras reservadas utilizadas que no se han explicado, por ejemplo:
+		<br>
+
+		<ul>
+			<li><b>action</b>: dentro se debe especificar el archivo del servidor al cual se le va a enviar las respuestas del formulario. Este archivo usualmente es un .php pero puede estar en otros lenguajes.</li>
+			<li><b>for</b>: aqui se debe espefificar el id del input, para que el label pueda saber a que input esta haciendo referencia.</li>
+		</ul>
+
+		<br>
+
+		Tenemos mas tipos de input: date, file, radio.
+		Y una nueva area de texto, que funciona para aquellas entradas de texto demasiado largas.
+	</p>
+
+	<form action="">
+		<fieldset>
+			<legend>Datos del usuario</legend>
+
+			<label for="Name">Nombre:</label>
+			<input type="text" id="Name" name="Name" />
+
+			<br>
+			<br>
+
+			<label for="pass">Constraseña:</label>
+			<input type="password" id="pass" name="pass" />
+
+			<br>
+			<br>
+
+			<label for="email">Nombre:</label>
+			<input type="email" id="email" name="email" />
+
+			<br>
+			<br>
+
+			<label for="date">Fecha de nacimiento:</label>
+			<input type="date" id="date" name="date" />
+
+			<br>
+			<br>
+
+			<label for="file">Curriculum:</label>
+			<input type="file" id="file" name="file" />
+
+			<br>
+			<br>
+
+			<textarea name="descrip" id="descrip" cols="50" rows="10"></textarea>
+		</fieldset>
+
+		<br>
+
+		<fieldset>
+			<legend>Color favorito (Se pueden escoger varias opciones):</legend>
+
+			<input type="radio" id="azul" />
+			<label for="azul">Azul</label>
+
+			<br>
+			<br>
+
+			<input type="radio" id="rojo" />
+			<label for="rojo">Rojo</label>
+
+			<br>
+			<br>
+
+			<input type="radio" id="verde" />
+			<label for="verde">Verde</label>
+
+			<br>
+			<br>
+		</fieldset>
+
+		<br>
+
+		<fieldset>
+			<legend>Color favorito (Se pueden escoger una sola opcion):</legend>
+
+			<input type="radio" id="azul" name="color" value="azul"/>
+			<label for="azul">Azul</label>
+
+			<br>
+			<br>
+
+			<input type="radio" id="rojo" name="color" value="rojo"/>
+			<label for="rojo">Rojo</label>
+
+			<br>
+			<br>
+
+			<input type="radio" id="verde" name="color" value="verde"/>
+			<label for="verde">Verde</label>
+
+			<br>
+			<br>
+		</fieldset>
+	</form>
+
+	<p>
+		Vamos por partes, podemos ver como los tipos file y date son parecidos en estructura a los anteriores tipos mostrados.
+		<br>
+		Luego el uso de la etiqueta textarea que ayuda a crear una caja de texto del tamaño que necesitemos.
+		<br>
+		Luego pasamos con la input radio que nos ayuda a crear los famosos formularios de opcion multiple. Para crearlos solo necesitamos espeficificar el type y su id, y el label siempre debajo del input (por motivos esteticos), pero ojo, esto es para aquellas preguntas que permitan varias opciones como respuestas. 
+		<br>
+		En el caso de ser preguntas con una sola respuesta se debe especificar el name, este debe ser igual en todas las input, pero no acaba ahi, en este caso se aumenta la palabra value, que va a servir para que el servidor sepa que opcion escogieron, en aquellas entradas donde el usuario ingresa el texto no es necesario lo de value porque el valor es aquel que escribe el usuario, sin embargo, en caso de las preguntas de opcion multiple el servidor no va a saber que escogio el usuario si es que no se le espeficica el value que contiene esta opcion. 
+		<br>
+		En conclusion, en aquella seccion donde se permite que el usuario escojaa as opciones que desee faltaria value, para que el servidor sepa los valores.
+	</p>
+
+	<a href="#home">Inicio</a>
+</body>
+</html>

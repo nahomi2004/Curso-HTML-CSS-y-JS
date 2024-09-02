@@ -773,24 +773,6 @@
 		<fieldset>
 			<legend>Datos del usuario</legend>
 
-			<label for="Name">Nombre:</label>
-			<input type="text" id="Name" name="Name" />
-
-			<br>
-			<br>
-
-			<label for="pass">Constraseña:</label>
-			<input type="password" id="pass" name="pass" />
-
-			<br>
-			<br>
-
-			<label for="email">Nombre:</label>
-			<input type="email" id="email" name="email" />
-
-			<br>
-			<br>
-
 			<label for="date">Fecha de nacimiento:</label>
 			<input type="date" id="date" name="date" />
 
@@ -809,7 +791,7 @@
 		<br>
 
 		<fieldset>
-			<legend>Color favorito (Se pueden escoger varias opciones):</legend>
+			<legend>Color favorito (Se pueden escoger varias opciones, esta mal ejecutado):</legend>
 
 			<input type="radio" id="azul" />
 			<label for="azul">Azul</label>
@@ -835,19 +817,19 @@
 		<fieldset>
 			<legend>Color favorito (Se pueden escoger una sola opcion):</legend>
 
-			<input type="radio" id="azul" name="color" value="azul"/>
+			<input type="radio" id="azul" name="color" value="azul" />
 			<label for="azul">Azul</label>
 
 			<br>
 			<br>
 
-			<input type="radio" id="rojo" name="color" value="rojo"/>
+			<input type="radio" id="rojo" name="color" value="rojo" />
 			<label for="rojo">Rojo</label>
 
 			<br>
 			<br>
 
-			<input type="radio" id="verde" name="color" value="verde"/>
+			<input type="radio" id="verde" name="color" value="verde" />
 			<label for="verde">Verde</label>
 
 			<br>
@@ -858,14 +840,133 @@
 	<p>
 		Vamos por partes, podemos ver como los tipos file y date son parecidos en estructura a los anteriores tipos mostrados.
 		<br>
-		Luego el uso de la etiqueta textarea que ayuda a crear una caja de texto del tamaño que necesitemos.
+		Luego el uso de la etiqueta textarea, esta ayuda a crear una caja de texto del tamaño que necesitemos.
 		<br>
-		Luego pasamos con la input radio que nos ayuda a crear los famosos formularios de opcion multiple. Para crearlos solo necesitamos espeficificar el type y su id, y el label siempre debajo del input (por motivos esteticos), pero ojo, esto es para aquellas preguntas que permitan varias opciones como respuestas. 
+		Luego pasamos con la input radio que nos ayuda a crear los famosos formularios de opcion multiple. Para crearlos solo necesitamos espeficificar el type y su id, ademas debes tener en cuenta que el label siempre va debajo del input (esto por motivos esteticos), pero ojo, esto es para aquellas preguntas que permitan varias opciones como respuestas.
 		<br>
-		En el caso de ser preguntas con una sola respuesta se debe especificar el name, este debe ser igual en todas las input, pero no acaba ahi, en este caso se aumenta la palabra value, que va a servir para que el servidor sepa que opcion escogieron, en aquellas entradas donde el usuario ingresa el texto no es necesario lo de value porque el valor es aquel que escribe el usuario, sin embargo, en caso de las preguntas de opcion multiple el servidor no va a saber que escogio el usuario si es que no se le espeficica el value que contiene esta opcion. 
+		En el caso de ser preguntas con una sola respuesta se debe especificar el name, este debe ser igual en todas las input.
 		<br>
-		En conclusion, en aquella seccion donde se permite que el usuario escojaa as opciones que desee faltaria value, para que el servidor sepa los valores.
+		Pero falta explicar el punto, que a mi parecer es lo mas importante, y es el uso de la clausula <i><b>value</b></i>. Esta palabra , que va a servir para que el servidor sepa que opcion escogieron lo usuarios. En aquellas entradas donde el usuario ingresa el texto no es necesario la clausula value porque el valor es aquel que escribe el usuario, sin embargo, en caso de las preguntas de opcion multiple el servidor no va a saber que escogio el usuario si es que no se le espeficica el valor que representa la opcion.
+		<br>
+		En conclusion el valor que es ingresado por el usuario no debe ser especificado internamente, sin embargo aquellos valores que el usuario escoge, si deben ser especificados internamente con la clausula <i><b>value</b></i>
+
+		<br>
+		<br>
+		Pero ahora vayamos con algo muy interesante que nos va ayudar en este caso a saber que color exacto es el color favorito del usuario.
 	</p>
+
+	<form action="">
+		<fieldset>
+			<legend>Color favorito (usando recuadro)</legend>
+			<input type="color" name="color" />
+		</fieldset>
+	</form>
+		
+	<p>
+		Este tipo de input nos va a crear un recuadro donde el usuario va a poder escoger un color exacto y el valor que recibira el servidor sera el codigo RGB del color.
+		<br>
+		Recuerda, el name siempre es necesario de especificar, para que en el momento en el que este trabajando con un servidor, no vaya haber perdida de datos o ambiguedades.
+		<br>
+		Pero sigamos con otra opcion para aquellos formularios de opcion multiple.
+	</p>
+
+	<form action="">
+		<fieldset>
+			<legend>Color favorito (usando listas)</legend>
+			<select name="color2" id="color2">
+				<option value="blue">Azul</option>
+				<option value="red">Rojo</option>
+				<option value="green">Verde</option>
+			</select>
+		</fieldset>
+	</form>
+
+	<p>
+		En este caso se utiliza la etiqueta select para poder crear la lista, y la etiqueta option para poder crear las opciones dentro de ella.
+		<br>
+		Pero vamos con otra etiqueta para la creacion de preguntas de opcion multiple:
+	</p>
+
+	<form action="">
+		<fieldset>
+			<legend>Hobbies</legend>
+
+			<input type="checkbox" id="read" name="hobby1" value="read" />
+			<label for="read">Leer</label><br>
+
+			<input type="checkbox" id="dance" name="hobby2" value="dance" />
+			<label for="dance">Bailar</label><br>
+
+			<input type="checkbox" id="coding" name="hobby3" value="coding" />
+			<label for="coding">Programar</label><br>
+		</fieldset>
+	</form>
+
+	<p>
+		Como nos damos cuenta es una forma de crear una pregunta donde se puede escoger varias opciones como respuesta, lo que tiene de especial y de diferente a la input tipo radio es que el name para las opciones es diferente.
+		<br>
+		Y ya casi para terminar tenemos los botones tipicos en un formulario.
+	</p>
+	<br>
+
+	<input type="submit" value="Listo" />
+	<input type="reset" value="Borrar" />
+
+	<p>
+		Estos botones son bastante conocidos, el listo sera aquel que permitira que el formulario sea enviado al servidor. Y el boton de Borrar permitira que todos los cambios se borren.
+		<br>
+		entonces nos quedaria de la siguiente forma todo el formulario hecho:
+	</p>
+
+	<form action="">
+		<fieldset>
+			<legend>Datos del usuario</legend>
+
+			<label for="name">Nombre:</label><br>
+			<input type="text" id="name" name="name" /><br>
+
+			<label for="email">Correo:</label><br>
+			<input type="email" id="email" name="email" /><br>
+
+			<label for="pass">Contraseña:</label><br>
+			<input type="password" id="pass" name="pass" /><br>
+
+			<label for="date">Fecha:</label><br>
+			<input type="date" id="date" name="date" /><br>
+
+			<label for="cv">Curriculum:</label><br>
+			<input type="file" id="cv" name="cv" /><br>
+
+			<label for="coment">Comentario:</label><br>
+			<textarea name="coment" id="coment" cols="50" rows="10"></textarea>
+		</fieldset>
+
+		<fieldset>
+			<legend>Color Favorito</legend>
+
+			<input type="radio" id="red" name="color" value="red" />
+			<label for="red">Rojo</label>
+
+			<input type="radio" id="green" name="color" value="green" />
+			<label for="green">Verde</label>
+
+			<input type="radio" id="blue" name="color" value="blue" />
+			<label for="blue">Azul</label>
+
+			<input type="radio" id="any" name="color" value="any" />
+			<label for="any">Ninguno</label>
+		</fieldset>
+
+		<fieldset>
+			<legend>Escoja su color favorito</legend>
+			<input type="color" name="color1" id="color" />
+		</fieldset>
+
+		<fieldset>
+			<legend>Escoja su color favorito</legend>
+			<input type="search" />
+		</fieldset>
+	</form>
 
 	<a href="#home">Inicio</a>
 </body>

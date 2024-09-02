@@ -1,10 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\nahom\\Downloads\\Curso-HTML-CSS-y-JS\\",
+  "WorkspaceRootPath": "C:\\Users\\nahom\\Downloads\\Curso-HTML-CSS-y-JS\\HTML\\",
   "Documents": [
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nahom\\Downloads\\Curso-HTML-CSS-y-JS\\HTML\\inicio.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:HTML\\inicio.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:inicio.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -21,13 +21,12 @@
               "DocumentIndex": 0,
               "Title": "inicio.html",
               "DocumentMoniker": "C:\\Users\\nahom\\Downloads\\Curso-HTML-CSS-y-JS\\HTML\\inicio.html",
-              "RelativeDocumentMoniker": "HTML\\inicio.html",
+              "RelativeDocumentMoniker": "inicio.html",
               "ToolTip": "C:\\Users\\nahom\\Downloads\\Curso-HTML-CSS-y-JS\\HTML\\inicio.html",
-              "RelativeToolTip": "HTML\\inicio.html",
-              "ViewState": "AgIAAHcCAAAAAAAAAAAqwIICAAAGAAAAAAAAAA==",
+              "RelativeToolTip": "inicio.html",
+              "ViewState": "AgIAAKwDAAAAAAAAAAAcwMYDAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-08-27T19:02:16.594Z",
-              "IsPinned": true,
+              "WhenOpened": "2024-09-02T17:11:25.413Z",
               "EditorCaption": ""
             }
           ]

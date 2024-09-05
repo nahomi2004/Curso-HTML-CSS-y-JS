@@ -915,7 +915,7 @@
 	<p>
 		Estos botones son bastante conocidos, el listo sera aquel que permitira que el formulario sea enviado al servidor. Y el boton de Borrar permitira que todos los cambios se borren.
 		<br>
-		entonces nos quedaria de la siguiente forma todo el formulario hecho:
+		Entonces nos quedaria de la siguiente forma todo el formulario hecho:
 	</p>
 
 	<form action="">
@@ -923,24 +923,25 @@
 			<legend>Datos del usuario</legend>
 
 			<label for="name">Nombre:</label><br>
-			<input type="text" id="name" name="name" /><br>
+			<input type="text" id="name" name="name" placeholder="Ingresa aqui tu nombre" /><br>
 
 			<label for="email">Correo:</label><br>
-			<input type="email" id="email" name="email" /><br>
+			<input type="email" id="email" name="email" placeholder="Ingresa aqui tu email" /><br>
 
 			<label for="pass">Contraseña:</label><br>
-			<input type="password" id="pass" name="pass" /><br>
+			<input type="password" id="pass" name="pass" placeholder="Ingresa aqui tu contraseña" /><br>
 
 			<label for="date">Fecha:</label><br>
-			<input type="date" id="date" name="date" /><br>
+			<input type="date" id="date" name="date" placeholder="Ingresa aqui tu fecha de nacimiento" /><br>
 
 			<label for="cv">Curriculum:</label><br>
 			<input type="file" id="cv" name="cv" /><br>
 
 			<label for="coment">Comentario:</label><br>
-			<textarea name="coment" id="coment" cols="50" rows="10"></textarea>
+			<textarea name="coment" id="coment" cols="50" rows="10" placeholder="Si deseas agregar algun comentario o recomendacion, escribela aqui" ></textarea>
 		</fieldset>
 
+		<!--Esto es para escoger una sola opcion-->
 		<fieldset>
 			<legend>Color Favorito</legend>
 
@@ -957,16 +958,45 @@
 			<label for="any">Ninguno</label>
 		</fieldset>
 
+		<!--Esto es para escoger un color en especifico
+	se envia su codigo RGB-->
 		<fieldset>
 			<legend>Escoja su color favorito</legend>
 			<input type="color" name="color1" id="color" />
 		</fieldset>
 
+		<!--Esto es para escoger dentro de una lista-->
 		<fieldset>
 			<legend>Escoja su color favorito</legend>
-			<input type="search" />
+			<select name="color2" id="color2">
+				<option value="blue">Azul</option>
+				<option value="red">Rojo</option>
+				<option value="green">Verde</option>
+			</select>
 		</fieldset>
+
+		<!--Esto es para escoger varias opciones-->
+		<fieldset>
+			<legend>Escoja su color favorito</legend>
+			<input type="checkbox" id="red" name="color3" value="red" />
+			<label for="red">Rojo</label><br>
+
+			<input type="checkbox" id="green" name="color3" value="green" />
+			<label for="green">Verde</label><br>
+
+			<input type="checkbox" id="blue" name="color3" value="blue" />
+			<label for="blue">Azul</label><br>
+		</fieldset>
+
+		<!--Botones para enviar el formulario o borrar los datos-->
+		<br>
+		<input type="submit" value="Listo" />
+		<input type="reset" value="Borrar" />
 	</form>
+
+	<p>
+		Lo unico que se le aumento aqui al codigo es la palabra placeholder, que sirve para escribir un indicativo en los lugares donde se debe ingresar texto. Ademas de la clausula required que indica que este campo es obligatorio. Y por ultimo el atributo aufocus que simplemente sirve para llamar la atencion del usuario y que empiece a llenar desde el lugar enfocado.
+	</p>
 
 	<a href="#home">Inicio</a>
 </body>

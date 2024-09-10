@@ -3,6 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<title>Primera pagina web</title>
+	
+	<!--Esto sirve para ponerle ese icon que hay en las paginas web-->
+	<link rel="icon" type="image/png" href="imagenes/icon.png" />
 </head>
 <body>
 	<p>Esta informacion fue recogida y resumida de la siguiente lista de reproduccion de Youtube https://www.youtube.com/watch?v=QwMlgfMK6fQ&list=PLJubkp8BnTJtjPikTnv8JoYWKFjUu7bRH&pp=iAQB es del creador de contenido @CodingTube</p>
@@ -861,7 +864,7 @@
 			<input type="color" name="color" />
 		</fieldset>
 	</form>
-		
+
 	<p>
 		Este tipo de input nos va a crear un recuadro donde el usuario va a poder escoger un color exacto y el valor que recibira el servidor sera el codigo RGB del color.
 		<br>
@@ -938,7 +941,7 @@
 			<input type="file" id="cv" name="cv" /><br>
 
 			<label for="coment">Comentario:</label><br>
-			<textarea name="coment" id="coment" cols="50" rows="10" placeholder="Si deseas agregar algun comentario o recomendacion, escribela aqui" ></textarea>
+			<textarea name="coment" id="coment" cols="50" rows="10" placeholder="Si deseas agregar algun comentario o recomendacion, escribela aqui"></textarea>
 		</fieldset>
 
 		<!--Esto es para escoger una sola opcion-->
@@ -959,7 +962,7 @@
 		</fieldset>
 
 		<!--Esto es para escoger un color en especifico
-	se envia su codigo RGB-->
+		se envia su codigo RGB-->
 		<fieldset>
 			<legend>Escoja su color favorito</legend>
 			<input type="color" name="color1" id="color" />
@@ -998,6 +1001,76 @@
 		Lo unico que se le aumento aqui al codigo es la palabra placeholder, que sirve para escribir un indicativo en los lugares donde se debe ingresar texto. Ademas de la clausula required que indica que este campo es obligatorio. Y por ultimo el atributo aufocus que simplemente sirve para llamar la atencion del usuario y que empiece a llenar desde el lugar enfocado.
 	</p>
 
+	<h2 id="vidaud">Audio y Video</h2>
+
+	<p>
+		Para agregar audios o videos en nnuestra pagina web, necesitamos saber que hay dos formas de hacerlo, una corta y otra extendida. La forma corta permite ahorra espacio y que el codigo sea mas simple, y la forma extendida ayuda a tener alternativas en caso de que el navegador no pueda reproducir algun formato en especifico.
+		<br>
+		Vamos con la forma extendida de agregar audio o video.
+	</p>
+
+	<!--Audio, forma extendida-->
+	<audio controls loop muted>
+		<source src="imagenes/reloj.mp3" type="audio/mp3" />
+		<source src="imagenes/reloj.ogg" type="audio/ogg" />
+		El navegador no puede reproducir el audio
+	</audio>
+
+	<br>
+	<br>
+
+	<!--Video, forma extendida-->
+	<video autoplay controls height="300">
+		<source src="imagenes/pajarito.mp4" type="video/mp4" />
+		<source src="imagenes/pajarito.wav" type="video/wav" />
+		El navegador no puede reproducir el video
+	</video>
+
+	<p>
+		Bueno nos podemos dar cuenta de que en cada cuerpo hay tres opciones, primero la opcion mp3 o mp4, de ahi otra opcion en otro formato y por ultimo, pero no menos importante, el mensaje de error en caso de que el navegador no pueda leer el formato del video o audio.
+		<br>
+		Otra cosa a tener en cuenta, son las palabras autoplay (reproduce automaticamente el archivo), controls (muestra los controles basicos, play, pausa, panatalla completa, etc.), loop (los videos se reproducen para siempre), muted (el video o audio no tiene sonido por defecto).
+		<br>
+		Ahora vamos con la forma corta.
+	</p>
+
+	<!--Audio, forma corta-->
+	<audio src="imagenes/reloj.mp3" controls></audio>
+	<br>
+
+	<!--Video, forma corta-->
+	<video src="imagenes/pajarito.mp4" autoplay controls loop height="300"></video>
+
+	<p>
+		No hay mucho que explicar sobre la forma corta, ya que lo unico que cambia es que no hay alternativas.
+		<br>
+		Pero, aun falta otra forma divertida con la cual puedes poner videos de youtube o de otra pagina web utilizando iframes. Que es como pegar una parte de la otra pagina web dentro de la tuya.
+		<br>
+		Lo unico que debes hacer, en caso de youtube, es ir a la parte de compartir el video, y hacer click en la opcion de <b><i>insertar</i></b>, de ahi copias y pegas el codigo dentro del tuyo, y listo.
+	</p>
+
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/OCyDmiNEIIs?si=pBPV91Sjd6ACvuvC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+	<p>
+		Te voy explicando que significa cada cosa, primero tenemos la etiqueta de apertura, luego le sigue el ancho y el alto, la direccion del video, el titulo, el borde que va a tener el video, y de ahi los permisos, que muchos son para que las personas que visiten la pagina web desde el celular se les haga mas accesible, y por ultimo tenemos la politica y el permiso de que el video se pueda reproducir en pantalla completa.
+		<br>
+		Entonces, resumamos las etiquetas...
+	</p>
+
+	<ul>
+		<li><i><b>audio</b></i>, permite insertar un audio</li>
+		<li><i><b>video</b></i>, permite insertar un video</li>
+		<li><i><b>source</b></i>, define la direcc y tipo del archivo a cargar</li>
+		<li><i><b>src</b></i>, direcc del archivo</li>
+		<li><i><b>type</b></i>, tipo de archivo</li>
+		<li><i><b>controls</b></i>, permite visualizar controles sobre el medio</li>
+		<li><i><b>loop</b></i>, repeticion continua del medio</li>
+		<li><i><b>autoplay</b></i>, reproduccion automatica del medio</li>
+		<li><i><b>mute</b></i>, silencia el medio</li>
+	</ul>
+
+	<br>
+	<br>
 	<a href="#home">Inicio</a>
 </body>
 </html>
